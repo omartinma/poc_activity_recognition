@@ -9,7 +9,7 @@ class ActivityRecognitionView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Test'),
+        title: const Text('Results'),
       ),
       body: BlocBuilder<ActivityRecognitionBloc, ActivityRecognitionState>(
         builder: (context, state) {
