@@ -16,7 +16,10 @@ class ActivityRecognitionView extends StatelessWidget {
           return ListView.builder(
             itemCount: state.activityEvents.length,
             itemBuilder: (context, index) {
-              return ActivityTile(activity: state.activityEvents[index]);
+              return ActivityTile(
+                activity: state.activityEvents[index],
+                first: index == 0,
+              );
             },
           );
         },

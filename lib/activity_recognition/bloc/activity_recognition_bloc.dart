@@ -25,7 +25,8 @@ class ActivityRecognitionBloc
       _activityRecognition.activityStream(),
       onData: (newActivityEvent) {
         final newEvents = List<ActivityEvent>.from(state.activityEvents)
-          ..add(newActivityEvent);
+          ..add(newActivityEvent)
+          ..sort((a, b) => b.timeStamp.compareTo(a.timeStamp));
         return state.copyWith(activityEvents: newEvents);
       },
     );
