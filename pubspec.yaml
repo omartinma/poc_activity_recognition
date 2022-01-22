@@ -16,6 +16,8 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   intl: ^0.17.0
+  permission_client:
+    path: packages/permission_client
 
 dev_dependencies:
   bloc_test: ^9.0.2
